@@ -1,2 +1,2 @@
-import"./assets/modulepreload-polyfill-3cfb730f.js";/* empty css                      */console.log("- Heyeyeeey!!");
+import"./assets/modulepreload-polyfill-3cfb730f.js";/* empty css                      */import{i as o}from"./assets/vendor-77e16229.js";const m=document.querySelector('input[type="number"]'),i=document.querySelector(".form"),n=document.querySelector('input[value="fulfilled"]');i.addEventListener("submit",s=>{s.preventDefault();const t=Number(m.value);new Promise((e,r)=>{setTimeout(()=>{n.checked?e(`✅ Fulfilled promise in ${t}ms`):r(`❌ Rejected promise in ${t}ms`)},t)}).then(e=>o.success({message:e,position:"topRight"})).catch(e=>o.error({message:e,position:"topRight"})),i.reset()});
 //# sourceMappingURL=commonHelpers2.js.map
