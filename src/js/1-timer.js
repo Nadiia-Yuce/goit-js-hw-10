@@ -36,7 +36,7 @@ const options = {
         messageSize: '16px',
         position: 'topRight',
         backgroundColor: '#ffa000',
-        iconUrl: '../img/caution.svg',
+        iconUrl: '/img/caution.svg',
         close: false,
         closeOnClick: true,
       });

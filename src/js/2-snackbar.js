@@ -34,7 +34,7 @@ form.addEventListener('submit', evt => {
         messageSize: '16px',
         position: 'topRight',
         backgroundColor: '#59a10d',
-        iconUrl: '../img/success.svg',
+        iconUrl: '/img/success.svg',
         close: false,
         closeOnClick: true,
       })
@@ -50,7 +50,7 @@ form.addEventListener('submit', evt => {
         messageSize: '16px',
         position: 'topRight',
         backgroundColor: '#ef4040',
-        iconUrl: '../img/error.svg',
+        iconUrl: '/img/error.svg',
         close: false,
         closeOnClick: true,
       })
