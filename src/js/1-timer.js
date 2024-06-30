@@ -2,7 +2,7 @@ import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-import cautionSvg from '/img/caution.svg';
+import cautionSvg from '../img/caution.svg';
 
 const input = document.querySelector('#datetime-picker');
 const button = document.querySelector('button[data-start]');
@@ -36,7 +36,7 @@ const options = {
         messageSize: '16px',
         position: 'topRight',
         backgroundColor: '#ffa000',
-        iconUrl: '/img/caution.svg',
+        iconUrl: cautionSvg,
         close: false,
         closeOnClick: true,
       });

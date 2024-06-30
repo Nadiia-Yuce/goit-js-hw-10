@@ -1,7 +1,7 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-import successSvg from '/img/success.svg';
-import errorSvg from '/img/error.svg';
+import successSvg from '../img/success.svg';
+import errorSvg from '../img/error.svg';
 
 const input = document.querySelector('input[type="number"]'); //value (delay) - к-ть мілісекунд
 const form = document.querySelector('.form');
@@ -34,7 +34,7 @@ form.addEventListener('submit', evt => {
         messageSize: '16px',
         position: 'topRight',
         backgroundColor: '#59a10d',
-        iconUrl: '/img/success.svg',
+        iconUrl: successSvg,
         close: false,
         closeOnClick: true,
       })
@@ -50,11 +50,11 @@ form.addEventListener('submit', evt => {
         messageSize: '16px',
         position: 'topRight',
         backgroundColor: '#ef4040',
-        iconUrl: '/img/error.svg',
+        iconUrl: errorSvg,
         close: false,
         closeOnClick: true,
       })
-    )
+    );
 
-    .finally(() => form.reset());
+  form.reset();
 });
