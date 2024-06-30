@@ -2,6 +2,7 @@ import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import cautionSvg from '../img/caution.svg';
 
 const input = document.querySelector('#datetime-picker');
 const button = document.querySelector('button[data-start]');
@@ -27,8 +28,17 @@ const options = {
       userSelectedDate = selectedDates[0];
     } else {
       iziToast.warning({
+        title: 'Caution',
+        titleColor: 'white',
+        titleSize: '16px',
         message: 'Please choose a date in the future',
+        messageColor: 'white',
+        messageSize: '16px',
         position: 'topRight',
+        backgroundColor: '#ffa000',
+        iconUrl: '../img/caution.svg',
+        close: false,
+        closeOnClick: true,
       });
       button.disabled = true;
     }
