@@ -1,7 +1,7 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-import successSvg from '../img/success.svg';
-import errorSvg from '../img/error.svg';
+import successSvg from '/img/success.svg';
+import errorSvg from '/img/error.svg';
 
 const input = document.querySelector('input[type="number"]'); //value (delay) - к-ть мілісекунд
 const form = document.querySelector('.form');
