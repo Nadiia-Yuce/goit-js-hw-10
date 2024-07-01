@@ -81,11 +81,11 @@ function handlerStart() {
     const now = Date.now(); //Unix time
     const elapsedTime = userSelectedDate - now;
 
-    if (elapsedTime === 0) {
+    if (elapsedTime <= 0) {
       clearInterval(intervalId);
       input.disabled = false;
       button.disabled = false;
-      //return
+      return;
     }
 
     const { days, hours, minutes, seconds } = convertMs(elapsedTime);
